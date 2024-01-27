@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simle Respondive Flexboc</title>
+    <style>
+        .containerr{
+            display:flex;
+            gap:10px;
+        }
+        .boxx{
+            height:200px;
+            width:100%;
+            background-color:aquamarine;
+        }
+        @media screen and (max-width: 576px){
+            .containerr{
+                flex-direction:column;
+            }
+        }
+        @media screen and (min-width:577px) and (max-width:992px){
+            .boxx{
+                background-color:antiquewhite;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="containerr">
+        <div class="boxx">
+            <h3>Box-1</h3>
+        </div>
+        <div class="boxx">
+            <h3>Box-2</h3>
+        </div>
+        <div class="boxx">
+            <h3>Box-3</h3>
+        </div>
+        <div class="boxx">
+            <h3>Box-4</h3>
+        </div>
+    </section>
+</body>
+</html>
